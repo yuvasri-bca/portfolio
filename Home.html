@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Survival Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Student Survival Dashboard</h2>
+    <div>
+        <button onclick="toggleDarkMode()">Theme</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<div class="card">
+    <h3>GPA Calculator</h3>
+    <input type="number" id="marks" placeholder="Enter Marks">
+    <button onclick="calculateGPA()">Calculate GPA</button>
+    <p id="gpaResult"></p>
+</div>
+
+<div class="card">
+    <h3>Attendance Checker</h3>
+    <input type="number" id="attendance" placeholder="Classes Attended">
+    <input type="number" id="total" placeholder="Total Classes">
+    <button onclick="calculateAttendance()">Check Attendance</button>
+    <p id="attendanceResult"></p>
+</div>
+
+<div class="card">
+    <h3>Goal Tracker</h3>
+    <input type="text" id="goalInput" placeholder="Enter Goal">
+    <button onclick="addGoal()">Add Goal</button>
+    <ul id="goalList"></ul>
+</div>
+
+<div class="card">
+    <h3>AI Study Assistant</h3>
+    <input type="text" id="userQuestion" placeholder="Ask a question">
+    <button onclick="askAI()">Ask AI</button>
+    <p id="aiResponse"></p>
+</div>
+
+<div class="card">
+    <h3>Motivational Quote</h3>
+    <button onclick="showQuote()">Show Quote</button>
+    <p id="quote"></p>
+</div>
+
+<div class="card">
+    <h3>Pomodoro Timer</h3>
+    <p id="timer">25:00</p>
+    <button onclick="startTimer()">Start Timer</button>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

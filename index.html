@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Survival Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="container">
+<h1>🎓 Student Survival Website</h1>
+<div class="login-box">
+<input type="text" id="username" placeholder="username">
+<input type="password" id="password" placeholder="password">
+<div>
+<button onclick="login()">Login</button>
+</div>
+<p>
+Demo Login
+<br>
+Username : admin
+<br>
+Password : 1234
+</p>
+</div>
+</div>
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+<header>
+<h1>🎓 Student Survival Dashboard</h1>
+<div>
+<button onclick="toggleTheme()">🌙 Theme</button>
+<button onclick="logout()">Logout</button>
+</div>
+</header>
+<!-- GPA -->
+<div class="card">
+<h2>🧮 GPA Calculator</h2>
+<input type="number" id="mark" placeholder="Enter Mark">
+<button onclick="calculateGPA()">Calculate</button>
+<p id="gpaResult"></p>
+</div>
+<!-- Attendance -->
+<div class="card">
+<h2>📊 Attendance Tracker</h2>
+<input type="number" id="attended" placeholder="Classes Attended">
+<input type="number" id="total" placeholder="Total Classes">
+<button onclick="calculateAttendance()">Check</button>
+<p id="attendanceResult"></p>
+</div>
+<!-- Goal Tracker -->
+<div class="card">
+<h2>🎯 Goal Tracker</h2>
+<input type="text" id="goalInput" placeholder="Enter Goal">
+<button onclick="addGoal()">Add Goal</button>
+<ul id="goalList"></ul>
+</div>
+<!-- Pomodoro Timer -->
+<div class="card">
+<h2>⏳ Pomodoro Timer</h2>
+<p id="timer">25:00</p>
+<button onclick="startTimer()">Start Timer</button>
+</div>
+<!-- AI Chat Box -->
+<div class="card">
+<h2>🤖 AI Study Assistant</h2>
+<input type="text" id="userQuestion" placeholder="Ask a question">
+<button onclick="askAI()">Ask</button>
+<p id="aiResponse"></p>
+</div>
+<!-- Motivation Quotes -->
+<div class="card">
+<h2>💡 Motivation Quote</h2>
+<button onclick="showQuote()">Get Quote</button>
+<p id="quote"></p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
